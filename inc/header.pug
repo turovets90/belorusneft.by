@@ -1,0 +1,83 @@
+-var main_menu =['Нефть','Белоруснефть','Люди','Заправка','Общество','Кругозор', 'Видео','Фотогалерея'];
+
+nav.nav_bar
+    .container
+        .row
+            .col-9.col-sm-9.col-md-9.col-xl-9.d-flex.align-items-center
+                .main_menu_container
+                    .mobile_topbar_info
+                        .mobile_btn
+                            button.hamburger
+                                span
+
+                        .informers.d-none.d-sm-block
+                            ul.row
+                                li.col-6.col-sm-3.nowrap <span>$</span> 1,9938
+                                li.col-6.col-sm-3.nowrap <span>€</span> 2,6344
+                                li.col-6.col-sm-3.nowrap <span>Гомель:</span> +16°C
+                                li.col-6.col-sm-3.nowrap <span>Brent</span> 65$
+                    .main_menu.left_menu
+                        .informers
+                            ul.row
+                                li.col-6.col-sm-3.nowrap <span>$</span> 1,9938
+                                li.col-6.col-sm-3.nowrap <span>€</span> 2,6344
+                                li.col-6.col-sm-3.nowrap <span>Гомель:</span> +16°C
+                                li.col-6.col-sm-3.nowrap <span>Brent</span> 65$
+                        ul.nav
+                            for menu_item,index in main_menu
+                                if index == 0
+                                    li.active
+                                        a(href="" + menu_item + '.html')=menu_item
+                                else
+                                    li
+                                        a(href="" + menu_item + '.html')=menu_item
+                        a.for_visually_impaired(href="#") Версия для слабовидящих
+            .col-3.col-sm-3.col-md-3.col-xl-3.d-flex.align-items-center
+                .right_menu.d-flex.align-items-center.justify-content-end
+                    a.authorization(href="#authorization" data-toggle='modal') Войти
+                    button.search_btn(data-toggle='dropdown' id="search_modal" aria-haspopup="true" aria-expanded="false")
+                    .dropdown-menu.search_form_dropdown(aria-labelledby="search_modal")
+                        .search_form_block
+                            form.search_form
+                                input(type="text" placeholder="Поиск по сайту")
+                                button.search_form_btn(type="submit")
+
+
+header
+    .container
+        .header_row
+            .header_item_row.h_row_1
+                .logo
+                    a.logo_link(href="/")
+                      img(src="img/logo.png")
+            .header_item_row.h_row_2
+                .informers
+                    .row
+                        .col-4.item
+                            .row
+                                .col-6 <span>$</span> 1,9938
+                                .col-6 <span>€</span> 2,6344
+                        .col-4.item <span>Гомель:</span> +16°C
+                        .col-4.item <span>Brent</span> 65$
+                .discount
+                    div Скидка на топливо в сети АЗС “Белоруснефть” - 5%! <span class="new">new!</span>
+
+            .header_item_row.h_row_3
+                a.for_visually_impaired(href="#") Версия для слабовидящих
+
+                ul.social_menu
+                    li
+                        a.telegram(href="#")
+                    li
+                        a.vk(href="#")
+                    li
+                        a.twitter(href="#")
+                    li
+                        a.fb(href="#")
+                    li
+                        a.instagram(href="#")
+                    li
+                        a.youtube(href="#")
+
+
+
