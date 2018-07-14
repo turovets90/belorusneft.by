@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
     $('.mobile_btn').click(function () {
         $(this).toggleClass('active');
         $('.main_menu').toggleClass('open');
@@ -9,8 +7,7 @@ $(document).ready(function(){
         return false;
     });
 
-
-    $('.main_slider .slider_item').each(function(){
+   $('.main_slider_desktop .slider_item, .main_slider_mobile .slider_item').each(function(){
         var desc_overflow = $(this).find('.desc_overflow');
         var desc_overflow_height = $(this).find('.desc_overflow').height();
         var main_slider_caption = $(this).find('.caption');
@@ -39,26 +36,56 @@ $(document).ready(function(){
         });
     });
 
-
-
-    $('.main_slider').slick({
+    $('.main_slider_desktop').slick({
         dots: false,
-        //infinite: true,
-        //speed: 300,
         arrows:false,
         slidesToShow: 1,
-        //centerMode: true,
-        variableWidth: true
+        draggable:false,
     });
 
-
-    $('.main_slider_btn_prev').click(function(){
-        $('.main_slider').slick('slickPrev');
+    $('.main_slider_desktop').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.main_slider_desktop .green, .main_slider_desktop .caption').animate({'opacity': '0'}, 0);
     });
 
-    $('.main_slider_btn_next').click(function(){
-        $('.main_slider').slick('slickNext');
+    $('.main_slider_desktop').on('afterChange', function(event, slick, currentSlide){
+        $('.main_slider_desktop .green, .main_slider_desktop .caption').animate({'opacity': '1'}, 300);
     });
+
+    $('.main_slider_mobile').slick({
+        dots: false,
+        arrows:false,
+        slidesToShow: 1,
+        variableWidth:true,
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth:false,
+                }
+            }
+        ]
+    });
+
+    if($(document).width() > 1200){
+        $('.main_slider_btn_prev').click(function(){
+            $('.main_slider_desktop').slick('slickPrev');
+        });
+
+        $('.main_slider_btn_next').click(function(){
+            $('.main_slider_desktop').slick('slickNext');
+        });
+    }else{
+        $('.main_slider_btn_prev').click(function(){
+            $('.main_slider_mobile').slick('slickPrev');
+        });
+
+        $('.main_slider_btn_next').click(function(){
+            $('.main_slider_mobile').slick('slickNext');
+        });
+    }
+
+
 
 
 
