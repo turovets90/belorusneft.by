@@ -1365,6 +1365,10 @@ article{
     background: #fff;
     padding: 6px 20px 20px;
     position: relative;
+    @media (max-width:1200px){
+      height: 100%;
+      padding-bottom: 43px;
+    }
     &:before{
       .b_a();
       border:3px solid #DDDDDD;
@@ -1406,6 +1410,9 @@ article{
 
 
     &.first{
+      @media (max-width:1200px){
+        height: auto;
+      }
 
       .photo{
         display: inline-block;
@@ -1503,6 +1510,10 @@ article{
     > div{
       padding-left: 5px;
       padding-right: 5px;
+      @media (max-width:1200px){
+        padding-left: 10px;
+        padding-right:10px;
+      }
     }
   }
 
@@ -1512,6 +1523,13 @@ article{
     width: 100%;
     position: relative;
     margin-top: 13px;
+    @media (max-width:1200px){
+        position: absolute;
+      width: auto;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+    }
     *{
       color: #828282;
       font: 11px @ProximaNovaRegular;
@@ -1599,9 +1617,15 @@ article{
     @media (min-width:1200px){
       width: 300px;
     }
+    @media (min-width:768px) and (max-width: 1200px){
+      width: 45%;
+    }
     &.w2{
       @media (min-width:1200px){
          width: 610px;
+      }
+      @media (max-width:1200px){
+        width: 100%;
       }
     }
   }

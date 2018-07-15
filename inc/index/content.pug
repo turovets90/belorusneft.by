@@ -290,7 +290,7 @@ main
                             a.comments_count(href="#") 42
                             span.views_count 500
                             span.time 11.25
-    section.opinion
+    section.opinion#opinion
         .container
             p.section_title Мнение
             .row.row_opinion
@@ -308,7 +308,7 @@ main
             .col-12
 
             .col-12.col-sm-12.col-md-12.col-xl-9.content
-                section.subscribe
+                section.subscribe#subscribe_home
                     .subscribe_form_container
                         form.row.subscribe_form
                             .col-8.col-sm-8.col-md-8.col-xl-8.col_left
@@ -328,8 +328,8 @@ main
 
 
                 section.main_news_section
-                    .row.news_list.grid_news
-                        .col-12.col-sm-12.col-md-8.col-xl-8.grid-item.w2
+                    .row.news_list.grid_news#news_list
+                        .col-12.col-sm-12.col-md-12.col-xl-8.grid-item.w2
                             p.section_title НЕФТЬ
                             article.type_news.first
                                 a.category(href="#") Блоги
@@ -343,9 +343,9 @@ main
                                     span.time 11.25
 
 
-                        .col-12.col-sm-12.col-md-4.col-xl-4.d-none.d-xl-block.grid-item
-                            p.section_title Свежие новости
-                            section.latest_news
+                        .col-12.col-sm-6.col-md-6.col-xl-4.d-none.d-xl-block.grid-item
+                            section.latest_news#latest_news_home
+                                p.section_title Свежие новости
                                 article.type_latest_news
                                     a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования
                                     .item_desc Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...
@@ -397,7 +397,7 @@ main
 
 
                                 a.read_more(href="#") все новости...
-                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                        .col-12.col-sm-6.col-md-6.col-xl-4.grid-item
                             article.type_news.lines
                                 a.category(href="#") Мнения
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -410,7 +410,7 @@ main
                                     span.time 11.25
 
 
-                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                        .col-12.col-sm-6.col-md-6.col-xl-4.grid-item
                             article.type_news
                                 a.category(href="#") Блоги
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -421,7 +421,7 @@ main
                                     span.views_count 500
                                     a.share(href="#")
                                     span.time 11.25
-                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                        .col-12.col-sm-12.col-md-6.col-xl-4.grid-item
                             article.type_news
                                 a.category(href="#") Мнения
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -436,7 +436,7 @@ main
 
 
 
-                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                        .col-12.col-sm-6.col-md-6.col-xl-4.grid-item
                             article.type_news
                                 a.category(href="#") Блоги
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -451,7 +451,7 @@ main
 
 
 
-                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                        .col-12.col-sm-12.col-md-6.col-xl-4.grid-item
                             article.type_news.border_topright
                                 a.category(href="#") Мнения
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -469,6 +469,9 @@ main
                     .col-12.load_more_block
                         button.load_more показать <span class="load_more_icon"></span> большe
             .col-12.col-sm-12.col-md-12.col-xl-3.sidebar
+                section.gallery
+                    p.section_title.mt-0 Фотогалерея
+
 
 
 
