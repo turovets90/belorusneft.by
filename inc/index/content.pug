@@ -290,20 +290,186 @@ main
                             a.comments_count(href="#") 42
                             span.views_count 500
                             span.time 11.25
-    .flex_container
-        section.opinion
-            .container
-                p.section_title Мнение
-                .row.row_opinion
-                    -for(var i=0;i<=4;i++)
-                        .col-12.col-sm-6.col-md-4
-                            a.item(href="#")
-                                span.img(style="background-image:url(img/img1.jpg)")
-                                .text
-                                    p.name Анатолий Голомолзин
-                                    .desc Налоги должны носить не только фискальный, но и регулирующий характер...
+    section.opinion
+        .container
+            p.section_title Мнение
+            .row.row_opinion
+                -for(var i=0;i<=4;i++)
+                    .col-12.col-sm-6.col-md-4
+                        a.item(href="#")
+                            span.img(style="background-image:url(img/img1.jpg)")
+                            .text
+                                p.name Анатолий Голомолзин
+                                .desc Налоги должны носить не только фискальный, но и регулирующий характер...
 
-        section.subscribe
+
+    .container
+        .row
+            .col-12
+
+            .col-12.col-sm-12.col-md-12.col-xl-9.content
+                section.subscribe
+                    .subscribe_form_container
+                        form.row.subscribe_form
+                            .col-8.col-sm-8.col-md-8.col-xl-8.col_left
+                                .input_field
+                                    label Самые горячие темы <span class="line"></span>
+                                    input.form-control(type="text" placeholder="Введите E-mail...")
+                                    hr
+                            .col-4.col-sm-4.col-md-4.col-xl-4.col_right
+                                .btn_field
+                                    button.s_btn(type="submit")
+                                        span.text Подписаться
+                                        span.icon
+
+
+
+
+
+
+                section.main_news_section
+                    .row.news_list.grid_news
+                        .col-12.col-sm-12.col-md-8.col-xl-8.grid-item.w2
+                            p.section_title НЕФТЬ
+                            article.type_news.first
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+                        .col-12.col-sm-12.col-md-4.col-xl-4.d-none.d-xl-block.grid-item
+                            p.section_title Свежие новости
+                            section.latest_news
+                                article.type_latest_news
+                                    a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования
+                                    .item_desc Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        a.share(href="#")
+
+
+                                article.type_latest_news
+                                   a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа
+                                   .item_desc Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...
+                                   .meta
+                                       a.comments_count(href="#") 42
+                                       span.views_count 500
+                                       a.share(href="#")
+
+
+                                article.type_latest_news
+                                    a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        a.share(href="#")
+                                article.type_latest_news
+                                    a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования
+                                    .item_desc Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        a.share(href="#")
+                                article.type_latest_news
+                                    a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        a.share(href="#")
+                                article.type_latest_news
+                                    a.item_title(href="#") <span class="time">09:30</span> Администрация Дональда Трампа
+                                    .item_desc Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        a.share(href="#")
+
+
+
+
+
+
+                                a.read_more(href="#") все новости...
+                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                            article.type_news.lines
+                                a.category(href="#") Мнения
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития...
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                            article.type_news
+                                a.category(href="#") Мнения
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+
+
+                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+
+
+                        .col-12.col-sm-12.col-md-4.col-xl-4.grid-item
+                            article.type_news.border_topright
+                                a.category(href="#") Мнения
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим...
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+
+
+                    .col-12.load_more_block
+                        button.load_more показать <span class="load_more_icon"></span> большe
+            .col-12.col-sm-12.col-md-12.col-xl-3.sidebar
+
 
 
 

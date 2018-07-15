@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
@@ -332,40 +333,134 @@
           </div>
         </div>
       </section>
-      <div class="flex_container">
-        <section class="opinion">
-          <div class="container">
-            <p class="section_title">Мнение</p>
-            <div class="row row_opinion">
-              <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
-                  <div class="text">
-                    <p class="name">Анатолий Голомолзин</p>
-                    <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
-                  </div></a></div>
-              <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
-                  <div class="text">
-                    <p class="name">Анатолий Голомолзин</p>
-                    <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
-                  </div></a></div>
-              <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
-                  <div class="text">
-                    <p class="name">Анатолий Голомолзин</p>
-                    <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
-                  </div></a></div>
-              <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
-                  <div class="text">
-                    <p class="name">Анатолий Голомолзин</p>
-                    <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
-                  </div></a></div>
-              <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
-                  <div class="text">
-                    <p class="name">Анатолий Голомолзин</p>
-                    <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
-                  </div></a></div>
-            </div>
+      <section class="opinion">
+        <div class="container">
+          <p class="section_title">Мнение</p>
+          <div class="row row_opinion">
+            <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
+                <div class="text">
+                  <p class="name">Анатолий Голомолзин</p>
+                  <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
+                </div></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
+                <div class="text">
+                  <p class="name">Анатолий Голомолзин</p>
+                  <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
+                </div></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
+                <div class="text">
+                  <p class="name">Анатолий Голомолзин</p>
+                  <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
+                </div></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
+                <div class="text">
+                  <p class="name">Анатолий Голомолзин</p>
+                  <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
+                </div></a></div>
+            <div class="col-12 col-sm-6 col-md-4"><a class="item" href="#"><span class="img" style="background-image:url(img/img1.jpg)"></span>
+                <div class="text">
+                  <p class="name">Анатолий Голомолзин</p>
+                  <div class="desc">Налоги должны носить не только фискальный, но и регулирующий характер...</div>
+                </div></a></div>
           </div>
-        </section>
-        <section class="subscribe"></section>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12"></div>
+          <div class="col-12 col-sm-12 col-md-12 col-xl-9 content">
+            <section class="subscribe">
+              <div class="subscribe_form_container">
+                <form class="row subscribe_form">
+                  <div class="col-8 col-sm-8 col-md-8 col-xl-8 col_left">
+                    <div class="input_field">
+                      <label>Самые горячие темы <span class="line"></span></label>
+                      <input class="form-control" type="text" placeholder="Введите E-mail..."/>
+                      <hr/>
+                    </div>
+                  </div>
+                  <div class="col-4 col-sm-4 col-md-4 col-xl-4 col_right">
+                    <div class="btn_field">
+                      <button class="s_btn" type="submit"><span class="text">Подписаться</span><span class="icon"></span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <section class="main_news_section">
+              <div class="row news_list grid_news">
+                <div class="col-12 col-sm-12 col-md-8 col-xl-8 grid-item w2">
+                  <p class="section_title">НЕФТЬ</p>
+                  <article class="type_news first"><a class="category" href="#">Блоги</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 d-none d-xl-block grid-item">
+                  <p class="section_title">Свежие новости</p>
+                  <section class="latest_news">
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования</a>
+                      <div class="item_desc">Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...</div>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article>
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа</a>
+                      <div class="item_desc">Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...</div>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article>
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования</a>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article>
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования</a>
+                      <div class="item_desc">Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...</div>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article>
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа расширила полномочия американского киберкомандования</a>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article>
+                    <article class="type_latest_news"><a class="item_title" href="#"><span class="time">09:30</span> Администрация Дональда Трампа</a>
+                      <div class="item_desc">Теперь ведомство может осуществлять ежедневные хакерские рейды на иностранные сети для предупреждения кибератак, сообщает «Нью-Йорк Таймс»...</div>
+                      <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a></div>
+                    </article><a class="read_more" href="#">все новости...</a>
+                  </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 grid-item">
+                  <article class="type_news lines"><a class="category" href="#">Мнения</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 grid-item">
+                  <article class="type_news"><a class="category" href="#">Блоги</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития...</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 grid-item">
+                  <article class="type_news"><a class="category" href="#">Мнения</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим и промышленным потенциалом, развитой социальной инфраструктурой, высоким уровнем развития человеческого капитала. В конце апреля...</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 grid-item">
+                  <article class="type_news"><a class="category" href="#">Блоги</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 grid-item">
+                  <article class="type_news border_topright"><a class="category" href="#">Мнения</a><a class="photo" href="#" style="background-image:url(img/news.jpg)"></a><a class="article_name" href="#">Беларусь и Татарстан наращивают товарооборот</a>
+                    <div class="article_desc"> Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим...</div>
+                    <div class="meta"><a class="comments_count" href="#">42</a><span class="views_count">500</span><a class="share" href="#"></a><span class="time">11.25</span></div>
+                  </article>
+                </div>
+              </div>
+              <div class="col-12 load_more_block">
+                <button class="load_more">показать <span class="load_more_icon"></span> большe</button>
+              </div>
+            </section>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-xl-3 sidebar"></div>
+        </div>
       </div>
     </main>
   </body>

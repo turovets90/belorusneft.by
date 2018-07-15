@@ -86,6 +86,20 @@ $(document).ready(function(){
     }
 
 
+    $('.grid_news').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 309,
+    });
+
+    /*var $MasGrid = $('.grid_news');
+    $MasGrid.masonry({ //
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
+        horizontalOrder: true,
+        percentPosition: true
+    });*/
+
+
 
 
 
