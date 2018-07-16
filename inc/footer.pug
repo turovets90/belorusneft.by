@@ -1,0 +1,45 @@
+-var main_menu2 =['О нас','Контакты','Реклама','Архив','Пресса','Партнеры'];
+footer
+    .container
+        .row
+            .col-12.col-sm-12.col-md-6.col-xl-7
+                .row
+                    .col-12.col-sm-12.col-md-6.col-xl-5
+                        .f_logo
+                            a(href="#")
+                                img(src="img/f_logo.png")
+                        p.copyright © 2018  Neft.by<br> при поддержке ПО «Белоруснефть»
+                    .col-12.col-sm-12.col-md-6.col-xl-7
+                        .contacts
+                            p Государственное производственное объединение «Белоруснефть»
+                            p Адрес: ул. Рогачевская, 9, г. Гомель, 246003, РБ
+                            p Справочная телефонов ПО «Белоруснефть»:<br> +375 (232) 79-33-33.
+                            p Факс: +375 (232) 33-85-14, 79-34-35.
+                            p E-mail: contact
+            .col-12.col-sm-12.col-md-6.col-xl-5
+                .row
+                    .col-12
+                        ul.f_nav.row
+                            for menu_item,index in main_menu2
+                                li.col-12.col-sm-12.col-md-12.col-xl-4
+                                    a(href="" + menu_item + '.html')=menu_item
+
+
+                    .col-12
+                        ul.f_social
+                            li
+                                a.fb(href="#") facebook
+                            li
+                                a.instagram(href="#") instagram
+                            li
+                                a.youtube(href="#") youtube
+                            li
+                                a.telegram(href="#") telegram
+                            li
+                                a.vk(href="#") vkontakte
+                            li
+                                a.twitter(href="#") twitter
+
+
+
+

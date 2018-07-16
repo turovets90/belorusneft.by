@@ -471,6 +471,239 @@ main
             .col-12.col-sm-12.col-md-12.col-xl-3.sidebar
                 section.gallery
                     p.section_title.mt-0 Фотогалерея
+                    .gallery_slider
+                        div.item
+                            .photo(style="background-image:url(img/gal1.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal2.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal7.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                    .gallery_slider_nav
+                        div.item
+                            .photo(style="background-image:url(img/gal1.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal2.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal7.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+
+                section.video_gallery
+                    p.section_title Видео
+                    .video_gallery_overflow
+                        -for(var i=0;i<=2;i++)
+                            .video_gallery_item
+                                .playpause
+                                video.video(controls)
+                                    source(src="img/Landscape.mp4" width="100%" height="150")
+
+                section.sidebar_news
+                    .row
+                        .col-8
+                            p.section_title.mt-1 Кругозор
+                        .col-4
+                            .btn_group_slider_news
+                                button.btn_slider_news.btn_slider_news_prev
+                                button.btn_slider_news.btn_slider_news_next
+                    .article_list.article_sidebar_slider
+                        -for(var i=1;i<=5;i++)
+                            article.type_news
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+    section.refueling.section_fullwidth
+        .container
+            p.section_title Заправка
+            .border_top
+                .row.article_list_fullwidth.article_list_fullwidth_slider
+                    -for(var i=1;i<=15;i++)
+                        .col-12.col-sm-6.col-md-4.col-xl-3.item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+    section.people.section_fullwidth
+        .container
+            p.section_title Люди
+            .row
+                .col-12.col-sm-12.col-md-6.col-xl-4
+                    .row
+                        .col-12.col-sm-6.col-md-6.col-xl-6
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+
+                        .col-12.col-sm-6.col-md-6.col-xl-6
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-md-block
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-md-block
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                .col-12.col-sm-6.col-md-6.col-xl-4.d-none.d-md-block
+                    article.type_people.center
+                        a.item(href="#")
+                            img(src="img/people.jpg")
+                        .caption
+                            a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                            .meta
+                                a.comments_count(href="#") 42
+                                span.views_count 500
+                                span.time 11.25
+                .col-12.col-sm-12.col-md-6.col-xl-4.d-none.d-md-block
+                    .row
+                        .col-12.col-sm-6.col-md-6.col-xl-6
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-md-block
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-md-block
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-md-block
+                            article.type_people
+                                a.item(href="#")
+                                    img(src="img/people.jpg")
+                                .caption
+                                    a.title(href="#") КОРПОРАТИВНЫЕ МЕДИА: Инструмент или бизнес?
+                                    .meta
+                                        a.comments_count(href="#") 42
+                                        span.views_count 500
+                                        span.time 11.25
+
+
+
+            a.read_more(href="#") Все персоны
+    section.belorusneft.section_fullwidth
+        .container
+            p.section_title Белоруснефть
+            .border_top
+                .row.article_list_fullwidth.article_list_fullwidth_slider
+                    -for(var i=1;i<=9;i++)
+                        .col-12.col-sm-6.col-md-4.col-xl-3.item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+    section.society.section_fullwidth
+        .container
+            p.section_title Общество
+            .border_top
+                .row.article_list_fullwidth.article_list_fullwidth_slider
+                    -for(var i=1;i<=8;i++)
+                        .col-12.col-sm-6.col-md-4.col-xl-3.item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+
+
+
+
 
 
 
