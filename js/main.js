@@ -202,6 +202,40 @@ $(document).ready(function(){
     }
 
 
+    if($('.big_gallery_slider .item').length > 1) {
+        $('.big_gallery_slider').slick({
+            autoplay: false,
+            dots: false,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.nav_slider'
+        });
+        $('.nav_slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.big_gallery_slider',
+            dots: false,
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [
+
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+        });
+    }
+
 
 
 

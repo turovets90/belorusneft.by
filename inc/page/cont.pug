@@ -1,0 +1,211 @@
+main.page
+    .container
+        .row
+            .col-12.col-sm-12.col-md-12.col-xl-9.content
+                .page_content
+                    figure.page_img
+                        a.green(href="#") Лидер
+                        img(src="img/p_img.png")
+                        figcaption
+                            .author Фото: Ольга Спехова
+                    .tags
+                        <a href="#">Белоруснефть</a>, <a href="#">День химика</a>, <a href="#">Сотрудничество</a>
+                    h1 Беларусь и Татарстан наращивают товарооборот
+                    .page_meta
+                        .author Автор: Ольга Спехова
+                        .meta
+                            a.comments_count(href="#") 42
+                            span.views_count 500
+                            a.share(href="#")
+                            span.time 01.06.2018
+                    h2 Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                    p В конце апреля Беларусь посетила делегация Республики Татарстан во главе с заместителем премьер-министра — министром промышленноссти и торг публики Татарстан Альбертом Каримовым. В составе делегации — представители министерств, ведомств и бизнесмены.
+                    .position-relative
+                        p
+                            strong Стиль для списка
+                            - var list = ['завод «Полимир»', 'входящий в ОАО «Нафтан»','«Могилевхимволокно»','«Гродно Амзот»','«Белшина»','МТЗ','МАЗ','БМЗ','БЕЛДЖИ','МЗОР','Минский моторный завод','провели переговоры в концерне «Беллегпром»','провели переговоры в Национальном агентстве по туризму Республики Беларусь','провели переговоры в Белорусском государственном технологическом университете (БГТУ)'];
+                        ul
+                            for list_item in list
+                                li=list_item
+                        figure.figure
+                            span.img
+                                img(src="img/img123.png")
+                            figcaption С приветственной речью выступает заместитель председателя концерна «Белнефтехим» Владимир Сизов.
+                                .author Фото: Ольга Спехова
+                    h3 Подзаголовок, стиль для текста и цитаты
+                    p В рамках визита делегации 27 апреля 2018 года в Президент-отеле состоялся белорусско-татарстанский полимерный форум, в котором приняли участие ПАО «Нижнекамскнефтехим», татарстанская электронная торговая площадка «ОнлайнКонтракт», предприятия концерна «Белнефтехим», Министерства промышленности, холдинга «Белресурсы» и другие. По мнению участников встречи, предприятия все чаще отказываются от услуг посредников и сотрудничают напрямую. Полимерный форум стал тому подтверждением — из 37 компаний, принимавших в нем участие, 35 являются производителями.
+                    p ПАО «Нижнекамскнефтехим» презентовало собственные инновации в полиолефинах, новые позиции марочного ассортимента полиэтилена, а также проанализировало объемы производства полипропилена в России.
+                    blockquote.blockquote1 О сотрудничестве Беларуси и Татарстана в сфере науки говорили на встрече в Белорусском государственном технологическом университете. Здесь создан Республиканский научно-практический центр нефтехимических технологий и производств. На встрече ректора БГТУ Игоря Войтова с вице-президентом Академии наук Татарстана Айратом Абдуллиным обсуждались возможности использования белорусских разработок университетами и предприятиями Татарстана.
+                    h3 Стиль для таблицы и выноска
+                    table.table
+                        thead
+                            tr
+                                -for(var th =0;th<=3;th++)
+                                    th Заголовок
+                        tbody
+                            -for(var tr =0;tr<=3;tr++)
+                                tr
+                                    -for(var td =0;td<=3;td++)
+                                        td Значение
+                    P В рамках визита делегации 27 апреля 2018 года в Президент-отеле состоялся белорусско-татарстанский полимерный форум, в котором приняли участие ПАО «Нижнекамскнефтехим», татарстанская электронная торговая площадка «ОнлайнКонтракт», предприятия концерна «Белнефтехим», Министерства промышленности, холдинга «Белресурсы» и другие. По мнению участников встречи, предприятия все чаще отказываются от услуг посредников и сотрудничают напрямую. Полимерный форум стал тому подтверждением — из 37 компаний, принимавших в нем участие, 35 являются производителями.
+                    P ПАО «Нижнекамскнефтехим» презентовало собственные инновации в полиолефинах, новые позиции марочного ассортимента полиэтилена, а также проанализировало объемы производства полипропилена в России.
+                    blockquote.blockquote2
+                        p.title Заголовок выноски
+                        p В рамках визита делегации 27 апреля 2018 года в Президент-отеле состоялся белорусско-татарстанский полимерный форум, в котором приняли участие ПАО «Нижнекамскнефтехим», татарстанская электронная торговая площадка «ОнлайнКонтракт», предприятия концерна «Белнефтехим», Министерства промышленности, холдинга «Белресурсы» и другие. По мнению участников встречи, предприятия все чаще отказываются от услуг посредников и сотрудничают напрямую. Полимерный форум стал тому подтверждением — из 37 компаний, принимавших в нем участие, 35 являются производителями.
+                        p ПАО «Нижнекамскнефтехим» презентовало собственные инновации в полиолефинах, новые позиции марочного ассортимента полиэтилена, а также проанализировало объемы производства полипропилена в России.
+                    .row.mt-5
+                        .col-12.col-sm-12.col-md-6.col-xl-6
+                            p В рамках визита делегации 27 апреля 2018 года в Президент-отеле состоялся белорусско-татарстанский полимерный форум, в котором приняли участие ПАО «Нижнекамскнефтехим», татарстанская электронная торговая площадка «ОнлайнКонтракт», предприятия концерна «Белнефтехим», Министерства промышленности, холдинга «Белресурсы» и другие. По мнению участников встречи, предприятия все чаще отказываются от услуг посредников и сотрудничают напрямую. Полимерный форум стал тому подтверждением — из 37 компаний, принимавших в нем участие, 35 являются производителями. 
+                        .col-12.col-sm-12.col-md-6.col-xl-6
+                            figure.figure
+                                span.video
+                                    img(src="img/19.jpg")
+                                    .time 99.25
+                                figcaption С приветственной речью выступает заместитель председателя концерна «Белнефтехим» Владимир Сизов.
+                                    .author Фото: Ольга Спехова
+
+                    h3 Фотогалерея
+                    .page_photo_gallery
+                        .big_gallery_slider
+                            -for(var i=1;i<=11;i++)
+                                .item
+                                    a(data-fancybox="gallery" href="img/gallery/"+i+'.jpg')
+                                        span.img(style="background-image:url(img/gallery/" + i + ".jpg)")
+                        .nav_slider
+                            -for(var i=1;i<=11;i++)
+                                .item
+                                    span.img(style="background-image:url(img/gallery/" + i + ".jpg)")
+                    .page_meta.page_meta_bottom
+                        .share
+                            p Поделиться:
+                            <!-- uSocial -->
+                            <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
+                            <div class="uSocial-Share" data-pid="561a4ac40eb949d93fb12f5436d89ea3" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0" data-social="ok,vk,fb,telegram,spoiler" data-mobile="vi,wa,sms"></div>
+                            <!-- /uSocial -->
+                        .meta
+                            a.comments_count(href="#") 42
+                            span.views_count 500
+                            a.share(href="#")
+
+
+
+
+
+
+
+                .comments_content
+                    p.section_title Комментарии
+                    .add_comment_block
+                        form.add_comment_form
+                            .avatar
+                                .img(style="background-image:url(../img/)")
+
+
+            .col-12.col-sm-12.col-md-12.col-xl-3.sidebar
+                section.gallery
+                    p.section_title.mt-0 Фотогалерея
+                    .gallery_slider
+                        div.item
+                            .photo(style="background-image:url(img/gal1.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal2.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal7.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                                .caption
+                                    p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                    .gallery_slider_nav
+                        div.item
+                            .photo(style="background-image:url(img/gal1.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal2.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal7.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal3.jpg)")
+                        div.item
+                            .photo(style="background-image:url(img/gal4.jpg)")
+
+                section.video_gallery
+                    p.section_title Видео
+                    .video_gallery_overflow
+                        -for(var i=0;i<=2;i++)
+                        .video_gallery_item
+                            .playpause
+                            video.video(controls)
+                                source(src="img/Landscape.mp4" width="100%" height="150")
+
+                section.sidebar_news
+                    .row
+                        .col-8
+                            p.section_title.mt-1 Кругозор
+                        .col-4
+                            .btn_group_slider_news
+                                button.btn_slider_news.btn_slider_news_prev
+                                button.btn_slider_news.btn_slider_news_next
+                    .article_list.article_sidebar_slider
+                        -for(var i=1;i<=5;i++)
+                        article.type_news
+                            a.photo(href="#" style="background-image:url(img/news.jpg)")
+                            a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                            .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                            .meta
+                                a.comments_count(href="#") 42
+                                span.views_count 500
+                                a.share(href="#")
+                                span.time 11.25
+
+    section.refueling.section_fullwidth
+        .container
+            p.section_title Читайте также
+            .border_top
+                .row.article_list_fullwidth.article_list_fullwidth_slider
+                    -for(var i=1;i<=15;i++)
+                        .col-12.col-sm-6.col-md-4.col-xl-3.item
+                            article.type_news
+                                a.category(href="#") Блоги
+                                a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов
+                                .meta
+                                    a.comments_count(href="#") 42
+                                    span.views_count 500
+                                    a.share(href="#")
+                                    span.time 11.25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
