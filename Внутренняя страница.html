@@ -62,13 +62,17 @@
           </div>
           <div class="col-3 col-sm-3 col-md-3 col-xl-3 d-flex align-items-center">
             <div class="right_menu d-flex align-items-center justify-content-end"><a class="authorization" href="#authorization" data-toggle="modal">Войти</a>
-              <button class="search_btn" data-toggle="dropdown" id="search_modal" aria-haspopup="true" aria-expanded="false"></button>
-              <div class="dropdown-menu search_form_dropdown" aria-labelledby="search_modal">
-                <div class="search_form_block">
-                  <form class="search_form">
-                    <input type="text" placeholder="Поиск по сайту"/>
-                    <button class="search_form_btn" type="submit"></button>
-                  </form>
+              <div class="search_container">
+                <button class="search_btn" data-toggle="dropdown" id="search_modal" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu search_form_dropdown" aria-labelledby="search_modal">
+                  <div class="search_form_block">
+                    <form class="search_form">
+                      <div class="field">
+                        <input class="form-control" type="text" placeholder="Поиск по сайту..."/>
+                      </div>
+                      <button class="search_form_btn" type="submit"></button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -310,17 +314,17 @@
                 </div>
               </div>
             </div>
-            <section class="subscribe" id="subscribe_home">
+            <section class="subscribe">
               <div class="subscribe_form_container">
                 <form class="row subscribe_form">
-                  <div class="col-8 col-sm-8 col-md-8 col-xl-8 col_left">
+                  <div class="col-12 col-sm-8 col-md-8 col-xl-8 col_left">
                     <div class="input_field">
                       <label>Самые горячие темы <span class="line"></span></label>
                       <input class="form-control" type="text" placeholder="Введите E-mail..."/>
                       <hr/>
                     </div>
                   </div>
-                  <div class="col-4 col-sm-4 col-md-4 col-xl-4 col_right">
+                  <div class="col-12 col-sm-4 col-md-4 col-xl-4 col_right">
                     <div class="btn_field">
                       <button class="s_btn" type="submit"><span class="text">Подписаться</span><span class="icon"></span></button>
                     </div>
@@ -567,7 +571,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-xl-7">
+          <div class="col-12 col-sm-6 col-md-6 col-xl-7">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-xl-5">
                 <div class="f_logo"><a href="#"><img src="img/f_logo.png"/></a></div>
@@ -584,26 +588,26 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-xl-5">
+          <div class="col-12 col-sm-6 col-md-6 col-xl-5">
             <div class="row">
               <div class="col-12">
                 <ul class="f_nav row">
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="О нас.html">О нас</a></li>
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="Контакты.html">Контакты</a></li>
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="Реклама.html">Реклама</a></li>
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="Архив.html">Архив</a></li>
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="Пресса.html">Пресса</a></li>
-                  <li class="col-12 col-sm-12 col-md-12 col-xl-4"><a href="Партнеры.html">Партнеры</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="О нас.html">О нас</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="Контакты.html">Контакты</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="Реклама.html">Реклама</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="Архив.html">Архив</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="Пресса.html">Пресса</a></li>
+                  <li class="col-12 col-sm-6 col-md-6 col-xl-4"><a href="Партнеры.html">Партнеры</a></li>
                 </ul>
               </div>
               <div class="col-12">
-                <ul class="f_social">
-                  <li><a class="fb" href="#">facebook</a></li>
-                  <li><a class="instagram" href="#">instagram</a></li>
-                  <li><a class="youtube" href="#">youtube</a></li>
-                  <li><a class="telegram" href="#">telegram</a></li>
-                  <li><a class="vk" href="#">vkontakte</a></li>
-                  <li><a class="twitter" href="#">twitter</a></li>
+                <ul class="f_social row pl-0 ml-0">
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="fb" href="#">facebook</a></li>
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="instagram" href="#">instagram</a></li>
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="youtube" href="#">youtube</a></li>
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="telegram" href="#">telegram</a></li>
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="vk" href="#">vkontakte</a></li>
+                  <li class="col-12 col-sm-4 col-md-4 col-xl-2"><a class="twitter" href="#">twitter</a></li>
                 </ul>
               </div>
             </div>
@@ -611,5 +615,40 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="auth" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="title h1">Задать вопрос</p>
+            <button class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12 field">
+                  <input class="form-control" type="text"/>
+                  <label>ФИО<span>*</span></label>
+                </div>
+                <div class="col-12 field">
+                  <input class="form-control" type="text"/>
+                  <label>Телефон<span>*</span></label>
+                </div>
+                <div class="col-12 field">
+                  <input class="form-control" type="text"/>
+                  <label>E-mail<span>*</span></label>
+                </div>
+                <div class="col-12 field">
+                  <textarea class="form-control"></textarea>
+                  <label>Вопрос<span>*</span></label>
+                </div>
+                <div class="col-12 btn_block">
+                  <button class="btn_default" type="submit">отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

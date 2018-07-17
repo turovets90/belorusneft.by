@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Главная</title>
+    <title>Аккаунт</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -61,7 +61,20 @@
             </div>
           </div>
           <div class="col-3 col-sm-3 col-md-3 col-xl-3 d-flex align-items-center">
-            <div class="right_menu d-flex align-items-center justify-content-end"><a class="authorization" href="#authorization" data-toggle="modal">Войти</a>
+            <div class="right_menu d-flex align-items-center justify-content-end justify-content-lg-between">
+              <div class="user_container">
+                <div class="avatar_name" data-toggle="dropdown" id="user_dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar" style="background-image:url(img/user.jpg)"></div>
+                  <div class="name">Ivan1960</div>
+                </div>
+                <div class="dropdown-menu user_dropdown" aria-labelledby="user_dropdown">
+                  <ul class="user_menu">
+                    <li><a class="profile" href="#">Профиль</a></li>
+                    <li><a class="settings" href="#">Настройки</a></li>
+                    <li><a class="go_out" href="#">Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
               <div class="search_container">
                 <button class="search_btn" data-toggle="dropdown" id="search_modal" aria-haspopup="true" aria-expanded="false"></button>
                 <div class="dropdown-menu search_form_dropdown" aria-labelledby="search_modal">

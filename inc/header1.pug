@@ -33,8 +33,19 @@ nav.nav_bar
                                         a(href="" + menu_item + '.html')=menu_item
                         a.for_visually_impaired(href="#") Версия для слабовидящих
             .col-3.col-sm-3.col-md-3.col-xl-3.d-flex.align-items-center
-                .right_menu.d-flex.align-items-center.justify-content-end
-                    a.authorization(href="#authorization" data-toggle='modal') Войти
+                .right_menu.d-flex.align-items-center.justify-content-end.justify-content-lg-between
+                    .user_container
+                        .avatar_name(data-toggle='dropdown' id="user_dropdown" aria-haspopup="true" aria-expanded="false")
+                            .avatar(style="background-image:url(img/user.jpg)")
+                            .name Ivan1960
+                        .dropdown-menu.user_dropdown(aria-labelledby="user_dropdown")
+                            ul.user_menu
+                                li
+                                    a.profile(href="#") Профиль
+                                li
+                                    a.settings(href="#") Настройки
+                                li
+                                    a.go_out(href="#") Выйти
                     .search_container
                         button.search_btn(data-toggle='dropdown' id="search_modal" aria-haspopup="true" aria-expanded="false")
                         .dropdown-menu.search_form_dropdown(aria-labelledby="search_modal")
@@ -51,7 +62,7 @@ header
             .header_item_row.h_row_1
                 .logo
                     a.logo_link(href="/")
-                      img(src="img/logo.png")
+                        img(src="img/logo.png")
             .header_item_row.h_row_2
                 .informers
                     .row

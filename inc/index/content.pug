@@ -1,4 +1,4 @@
-main
+main.home
     section.main_slider_section
         .container.position-relative
             .main_slider_btn_group
@@ -311,12 +311,12 @@ main
                 section.subscribe#subscribe_home
                     .subscribe_form_container
                         form.row.subscribe_form
-                            .col-8.col-sm-8.col-md-8.col-xl-8.col_left
+                            .col-12.col-sm-8.col-md-8.col-xl-8.col_left
                                 .input_field
                                     label Самые горячие темы <span class="line"></span>
                                     input.form-control(type="text" placeholder="Введите E-mail...")
                                     hr
-                            .col-4.col-sm-4.col-md-4.col-xl-4.col_right
+                            .col-12.col-sm-4.col-md-4.col-xl-4.col_right
                                 .btn_field
                                     button.s_btn(type="submit")
                                         span.text Подписаться
@@ -421,7 +421,7 @@ main
                                     span.views_count 500
                                     a.share(href="#")
                                     span.time 11.25
-                        .col-12.col-sm-12.col-md-6.col-xl-4.grid-item
+                        .col-12.col-sm-6.col-md-6.col-xl-4.grid-item
                             article.type_news
                                 a.category(href="#") Мнения
                                 a.photo(href="#" style="background-image:url(img/news.jpg)")
@@ -454,14 +454,19 @@ main
                         .col-12.col-sm-12.col-md-6.col-xl-4.grid-item
                             article.type_news.border_topright
                                 a.category(href="#") Мнения
-                                a.photo(href="#" style="background-image:url(img/news.jpg)")
-                                a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
-                                .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим...
-                                .meta
-                                    a.comments_count(href="#") 42
-                                    span.views_count 500
-                                    a.share(href="#")
-                                    span.time 11.25
+                                .row
+                                    .col-12.col-sm-4.col-md-4.col-xl-12
+                                        a.photo(href="#" style="background-image:url(img/news.jpg)")
+                                    .col-12.col-sm-8.col-md-8.col-xl-12
+                                        a.article_name(href="#") Беларусь и Татарстан наращивают товарооборот
+                                        .article_desc  Республика Татарстан — один из наиболее значимых торгово-экономических партнеров Республики Беларусь среди российских регионов с достаточно выгодным экономико-географическим положением, высоким научно-техническим...
+                                        .meta
+                                            a.comments_count(href="#") 42
+                                            span.views_count 500
+                                            a.share(href="#")
+                                            span.time 11.25
+
+
 
 
 
@@ -517,11 +522,33 @@ main
                 section.video_gallery
                     p.section_title Видео
                     .video_gallery_overflow
-                        -for(var i=0;i<=2;i++)
-                            .video_gallery_item
-                                .playpause
-                                video.video(controls)
-                                    source(src="img/Landscape.mp4" width="100%" height="150")
+                        .row
+                            .col-12.col-sm-12.col-md-12
+                                .video_gallery_item
+                                    .playpause
+                                    .time 2.06
+                                    .caption
+                                        p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                                    video.video
+                                        source(src="img/Landscape.mp4" width="100%" height="150")
+                            .col-12.col-sm-6.col-md-12
+                                .video_gallery_item
+                                    .playpause
+                                    .time 2.06
+                                    .caption
+                                        p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                                    video.video
+                                        source(src="img/Landscape.mp4" width="100%" height="150")
+                            .col-12.col-sm-6.col-md-12
+                                .video_gallery_item
+                                    .playpause
+                                    .time 2.06
+                                    .caption
+                                        p <span class="text-uppercase">КОРПОРАТИВНЫЕ МЕДИА:</span><br> Инструмент или бизнес?
+                                    video.video
+                                        source(src="img/Landscape.mp4" width="100%" height="150")
+
+
 
                 section.sidebar_news
                     .row
@@ -578,7 +605,7 @@ main
                                         span.views_count 500
                                         span.time 11.25
 
-                        .col-12.col-sm-6.col-md-6.col-xl-6
+                        .col-12.col-sm-6.col-md-6.col-xl-6.d-none.d-sm-block
                             article.type_people
                                 a.item(href="#")
                                     img(src="img/people.jpg")

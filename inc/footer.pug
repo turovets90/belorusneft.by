@@ -2,7 +2,7 @@
 footer
     .container
         .row
-            .col-12.col-sm-12.col-md-6.col-xl-7
+            .col-12.col-sm-6.col-md-6.col-xl-7
                 .row
                     .col-12.col-sm-12.col-md-6.col-xl-5
                         .f_logo
@@ -16,29 +16,55 @@ footer
                             p Справочная телефонов ПО «Белоруснефть»:<br> +375 (232) 79-33-33.
                             p Факс: +375 (232) 33-85-14, 79-34-35.
                             p E-mail: contact
-            .col-12.col-sm-12.col-md-6.col-xl-5
+            .col-12.col-sm-6.col-md-6.col-xl-5
                 .row
                     .col-12
                         ul.f_nav.row
                             for menu_item,index in main_menu2
-                                li.col-12.col-sm-12.col-md-12.col-xl-4
+                                li.col-12.col-sm-6.col-md-6.col-xl-4
                                     a(href="" + menu_item + '.html')=menu_item
 
 
                     .col-12
-                        ul.f_social
-                            li
+                        ul.f_social.row.pl-0.ml-0
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.fb(href="#") facebook
-                            li
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.instagram(href="#") instagram
-                            li
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.youtube(href="#") youtube
-                            li
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.telegram(href="#") telegram
-                            li
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.vk(href="#") vkontakte
-                            li
+                            li.col-12.col-sm-4.col-md-4.col-xl-2
                                 a.twitter(href="#") twitter
+
+
+
+.modal#auth(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-header
+                p.title.h1 Задать вопрос
+                button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                form
+                    .row
+                        .col-12.field
+                            input.form-control(type="text")
+                            label ФИО<span>*</span>
+                        .col-12.field
+                            input.form-control(type="text")
+                            label Телефон<span>*</span>
+                        .col-12.field
+                            input.form-control(type="text")
+                            label E-mail<span>*</span>
+                        .col-12.field
+                            textarea.form-control
+                            label Вопрос<span>*</span>
+                        .col-12.btn_block
+                            button.btn_default(type="submit") отправить
 
 
 
