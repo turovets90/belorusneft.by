@@ -1,3 +1,97 @@
 .container
     button(type="button" data-toggle='modal' data-target="#auth") Авторизация
+    button(type="button" data-toggle='modal' data-target="#check_in") Регистрация
+    button(type="button" data-toggle='modal' data-target="#thanks") Спасибо за подписку
+
+.modal#auth(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                .modal_body_content.form_float_left
+                    .left_content.w_55
+                        .form_block
+                            p.f_title Вход
+                            form.modal_form
+                                .row
+                                    .col-12.field
+                                        span.mail
+                                            input.form-control(type="text" placeholder='Никнейм или Email')
+                                    .col-12.field
+                                        span.pass
+                                            input.form-control(type="password" placeholder='Пароль')
+                                            a(href="#") Забыли пароль?
+                                    .col-12.field.btn_block
+                                        button.btn(type="submit") Войти
+                            .row
+                                .col-12.col-sm-12.col-md-6
+                                    p Или войти через соцсети:
+                                .col-12.col-sm-12.col-md-6
+                                    ul.social
+                                        li
+                                            a.fb(href="")
+                                        li
+                                            a.instagram(href="")
+                                        li
+                                            a.telegram(href="")
+                                        li
+                                            a.twitter(href="")
+                                        li
+                                            a.vk(href="")
+                                        li
+                                            a.youtube(href="")
+
+
+
+                    .right_content.content_center.w_45
+                        div
+                            p.title Нет своего аккаунта?
+                            a.btn_default(href="#") Регистрация
+
+
+.modal#check_in(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                .modal_body_content.form_float_right
+                    .left_content.content_center.w_45
+                        div
+                            p.title Уже есть свой аккаунт?
+                            a.btn_default(href="#") Вход
+
+                    .right_content.w_55
+                        .form_block
+                            p.f_title Регистрация
+                            form.modal_form
+                                .row
+                                    .col-12.field
+                                        span.mail
+                                            input.form-control(type="text" placeholder='Email')
+                                    .col-12.field
+                                        span.nikname
+                                            input.form-control(type="text" placeholder='Никнейм ')
+                                    .col-12.field
+                                        span.pass
+                                            input.form-control(type="password" placeholder='Пароль')
+                                            a(href="#") Забыли пароль?
+                                    .col-12.field.btn_block
+                                        button.btn(type="submit") Зарегистрироваться
+
+
+.modal#thanks(role="dialog" aria-labelledby="modalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            button.close(data-dismiss="modal" aria-label="Close")
+            .modal-body
+                .thanks_content
+                    img(src="img/check.svg")
+                    p.title Благодарим Вас за подписку
+                    p.sub_title Вы только что подписались на рассылку от Neft.by
+                    a.btn(href="#") Продолжить
+
+
+
+
+
 

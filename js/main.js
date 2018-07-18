@@ -234,37 +234,7 @@ $(document).ready(function(){
         var latest_news_home = $('#latest_news_home');
         $(subscribe_home).before(opinion);
         $(subscribe_home).after(latest_news_home);
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     $(window).scroll(function(){

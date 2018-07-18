@@ -19,7 +19,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
   </head>
-  <body>
+  <body id="body">
     <nav class="nav_bar">
       <div class="container">
         <div class="row">
@@ -118,6 +118,102 @@
     </header>
     <div class="container">
       <button type="button" data-toggle="modal" data-target="#auth">Авторизация</button>
+      <button type="button" data-toggle="modal" data-target="#check_in">Регистрация</button>
+      <button type="button" data-toggle="modal" data-target="#thanks">Спасибо за подписку</button>
+    </div>
+    <div class="modal" id="auth" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button class="close" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="modal_body_content form_float_left">
+              <div class="left_content w_55">
+                <div class="form_block">
+                  <p class="f_title">Вход</p>
+                  <form class="modal_form">
+                    <div class="row">
+                      <div class="col-12 field"><span class="mail">
+                          <input class="form-control" type="text" placeholder="Никнейм или Email"/></span></div>
+                      <div class="col-12 field"><span class="pass">
+                          <input class="form-control" type="password" placeholder="Пароль"/><a href="#">Забыли пароль?</a></span></div>
+                      <div class="col-12 field btn_block">
+                        <button class="btn" type="submit">Войти</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <p>Или войти через соцсети:</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="social">
+                        <li><a class="fb" href=""></a></li>
+                        <li><a class="instagram" href=""></a></li>
+                        <li><a class="telegram" href=""></a></li>
+                        <li><a class="twitter" href=""></a></li>
+                        <li><a class="vk" href=""></a></li>
+                        <li><a class="youtube" href=""></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right_content content_center w_45">
+                <div>
+                  <p class="title">Нет своего аккаунта?</p><a class="btn_default" href="#">Регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="check_in" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button class="close" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="modal_body_content form_float_right">
+              <div class="left_content content_center w_45">
+                <div>
+                  <p class="title">Уже есть свой аккаунт?</p><a class="btn_default" href="#">Вход</a>
+                </div>
+              </div>
+              <div class="right_content w_55">
+                <div class="form_block">
+                  <p class="f_title">Регистрация</p>
+                  <form class="modal_form">
+                    <div class="row">
+                      <div class="col-12 field"><span class="mail">
+                          <input class="form-control" type="text" placeholder="Email"/></span></div>
+                      <div class="col-12 field"><span class="nikname">
+                          <input class="form-control" type="text" placeholder="Никнейм "/></span></div>
+                      <div class="col-12 field"><span class="pass">
+                          <input class="form-control" type="password" placeholder="Пароль"/><a href="#">Забыли пароль?</a></span></div>
+                      <div class="col-12 field btn_block">
+                        <button class="btn" type="submit">Зарегистрироваться</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="thanks" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button class="close" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="thanks_content"><img src="img/check.svg"/>
+              <p class="title">Благодарим Вас за подписку</p>
+              <p class="sub_title">Вы только что подписались на рассылку от Neft.by</p><a class="btn" href="#">Продолжить</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="container">
@@ -165,41 +261,6 @@
           </div>
         </div>
       </div>
-    </footer>
-    <div class="modal" id="auth" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="title h1">Задать вопрос</p>
-            <button class="close" data-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="row">
-                <div class="col-12 field">
-                  <input class="form-control" type="text"/>
-                  <label>ФИО<span>*</span></label>
-                </div>
-                <div class="col-12 field">
-                  <input class="form-control" type="text"/>
-                  <label>Телефон<span>*</span></label>
-                </div>
-                <div class="col-12 field">
-                  <input class="form-control" type="text"/>
-                  <label>E-mail<span>*</span></label>
-                </div>
-                <div class="col-12 field">
-                  <textarea class="form-control"></textarea>
-                  <label>Вопрос<span>*</span></label>
-                </div>
-                <div class="col-12 btn_block">
-                  <button class="btn_default" type="submit">отправить</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer><a class="scrolltop" href="#body"></a>
   </body>
 </html>
