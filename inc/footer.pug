@@ -8,7 +8,7 @@ footer
                         .f_logo
                             a(href="#")
                                 img(src="img/f_logo.png")
-                        p.copyright © 2018  Neft.by<br> при поддержке ПО «Белоруснефть»
+                        p.copyright.d-none.d-sm-block © 2018  Neft.by<br> при поддержке ПО «Белоруснефть»
                     .col-12.col-sm-12.col-md-6.col-xl-7
                         .contacts
                             p Государственное производственное объединение «Белоруснефть»
@@ -21,24 +21,25 @@ footer
                     .col-12
                         ul.f_nav.row
                             for menu_item,index in main_menu2
-                                li.col-12.col-sm-6.col-md-6.col-xl-4
+                                li.col-6.col-sm-6.col-md-6.col-xl-4
                                     a(href="" + menu_item + '.html')=menu_item
 
 
                     .col-12
                         ul.f_social.row.pl-0.ml-0
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.fb(href="#") facebook
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.instagram(href="#") instagram
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.youtube(href="#") youtube
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.telegram(href="#") telegram
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.vk(href="#") vkontakte
-                            li.col-12.col-sm-4.col-md-4.col-xl-2
+                            li.col-4.col-sm-4.col-md-4.col-xl-2
                                 a.twitter(href="#") twitter
+                        p.copyright.d-block.d-sm-none.mt-4 © 2018  Neft.by<br> при поддержке ПО «Белоруснефть»
 
 
 a(href="#body" class="scrolltop")

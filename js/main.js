@@ -112,6 +112,21 @@ $(document).ready(function(){
             centerMode:true,
             focusOnSelect: true,
             variableWidth:true,
+            responsive: [
+
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 7,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                }
+            ]
         });
     }
 
