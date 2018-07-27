@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    $('.slider_item').each(function(){
+        var tag = $(this).find('.desc_overflow .desc');
+        var tag_text = $(tag).text();
+        if (tag_text.length > 130) {
+            var truncated = tag_text.trim().substring(0, 130) + "…";
+            $(tag).text(truncated);
+        }
+    });
+
     $('.mobile_btn').click(function () {
         $(this).toggleClass('active');
         $('.main_menu').toggleClass('open');
@@ -270,6 +279,9 @@ $(document).ready(function(){
         $('html,body').animate( { scrollTop: destination }, 1100 );
         return false;
     });
+
+
+
 
 
 
