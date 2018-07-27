@@ -211,10 +211,16 @@ h1, .h1{
 .h2{
   font: 24px @PragmaticaCTT;
   margin-bottom: 30px;
+  @media (max-width:767px){
+    font: 20px @PragmaticaCTT;
+  }
 }
 h2{
   font: 22px @PragmaticaCTT_bold;
   margin-bottom: 30px;margin-top: 30px;
+  @media (max-width:767px){
+    font: 20px @PragmaticaCTT;
+  }
 }
 
 
@@ -415,7 +421,7 @@ body{
     position: absolute;
     left: 20px;
     top: 0;
-    bottom: 5px;
+    bottom: 6px;
     margin: auto;cursor: pointer;
     z-index: 3000;
     @media (max-width:575px){
@@ -606,6 +612,10 @@ body{
       top: -12px !important;
     }
 
+    @media (max-width:375px){
+      top: -22px !important;
+    }
+
     .search_form_block{
       .search_form{
         background: #000;
@@ -650,6 +660,7 @@ body{
           background: @green;
           border:0;
           position: relative;
+          cursor: pointer;
           &:before{
             .b_a();
             .m_a();

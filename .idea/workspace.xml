@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b170aa94-02e2-42fd-a29c-31f1d08b9960" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/index/content.pug" beforeDir="false" afterPath="$PROJECT_DIR$/inc/index/content.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Главная.html" beforeDir="false" afterPath="$PROJECT_DIR$/Главная.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/аккаунт.html" beforeDir="false" afterPath="$PROJECT_DIR$/аккаунт.html" afterDir="false" />
-    </list>
+    <list default="true" id="b170aa94-02e2-42fd-a29c-31f1d08b9960" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,26 +22,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cont.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/inc/page/cont.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-                  <folding>
-                    <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-                    <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-                    <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-                    <element signature="n#section#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="content.pug" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/inc/index/content.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="45" column="41" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="41" />
+                <state relative-caret-position="460">
+                  <caret line="40" column="90" lean-forward="true" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="90" />
                   <folding>
                     <element signature="n#section#1;n#main#0;n#!!top" />
                     <element signature="n#div#0;n#main#0;n#!!top" />
@@ -66,78 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cont.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/inc/modal/cont.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-                  <folding>
-                    <element signature="n#div#1;n#!!top" />
-                    <element signature="n#div#2;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="аккаунт.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/аккаунт.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header1.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/inc/header1.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/inc/header.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="860">
-                  <caret line="43" column="58" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Главная.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Главная.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="модальные окна.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/модальные окна.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Внутренняя страница.pug" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Внутренняя страница.pug">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/style.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="301">
@@ -146,11 +57,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+                <state relative-caret-position="60">
+                  <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -223,8 +134,8 @@
         <option value="$PROJECT_DIR$/inc/page/cont.pug" />
         <option value="$PROJECT_DIR$/inc/footer.pug" />
         <option value="$PROJECT_DIR$/inc/index/content.pug" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/style.less" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -359,12 +270,12 @@
       <workItem from="1531851404434" duration="13962000" />
       <workItem from="1531894422743" duration="11455000" />
       <workItem from="1531913778776" duration="4062000" />
-      <workItem from="1532697822969" duration="1346000" />
+      <workItem from="1532697822969" duration="1601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143221000" />
+    <option name="totallyTimeSpent" value="143476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -375,7 +286,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.16450216" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.102813855" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1904762" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.102878466" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -833,10 +744,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="1114" column="20" selection-start-line="1114" selection-start-column="20" selection-end-line="1114" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/index/content.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="41" />
+        <state relative-caret-position="460">
+          <caret line="40" column="90" lean-forward="true" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="90" />
           <folding>
             <element signature="n#section#1;n#main#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#!!top" />
@@ -850,20 +775,6 @@
             <element signature="n#section#4;n#main#0;n#!!top" />
             <element signature="n#section#5;n#main#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="1114" column="20" selection-start-line="1114" selection-start-column="20" selection-end-line="1114" selection-end-column="20" />
         </state>
       </provider>
     </entry>
