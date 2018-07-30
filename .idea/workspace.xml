@@ -48,16 +48,16 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="301">
-                  <caret line="1114" column="20" selection-start-line="1114" selection-start-column="20" selection-end-line="1114" selection-end-column="20" />
+                <state relative-caret-position="382">
+                  <caret line="662" column="25" selection-start-line="662" selection-start-column="25" selection-end-line="662" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -79,7 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sidebar</find>
       <find>.gallery_slider</find>
       <find>.video_gallery_item</find>
       <find>min-width: 768px</find>
@@ -109,6 +108,7 @@
       <find>.time</find>
       <find>.slick-dots</find>
       <find>desc_overflow</find>
+      <find>.h2</find>
     </findStrings>
     <replaceStrings>
       <replace>../fonts/PragmaticaSlab</replace>
@@ -134,8 +134,8 @@
         <option value="$PROJECT_DIR$/inc/page/cont.pug" />
         <option value="$PROJECT_DIR$/inc/footer.pug" />
         <option value="$PROJECT_DIR$/inc/index/content.pug" />
-        <option value="$PROJECT_DIR$/css/style.less" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/style.less" />
       </list>
     </option>
   </component>
@@ -271,15 +271,15 @@
       <workItem from="1531894422743" duration="11455000" />
       <workItem from="1531913778776" duration="4062000" />
       <workItem from="1532697822969" duration="1601000" />
+      <workItem from="1532711064277" duration="553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143476000" />
+    <option name="totallyTimeSpent" value="144029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -644,16 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="4108" column="30" selection-start-line="4108" selection-start-column="30" selection-end-line="4108" selection-end-column="30" />
-          <folding>
-            <element signature="e#74919#75119#2" expanded="true" />
-            <element signature="e#75349#75498#2" expanded="true" />
-            <element signature="e#76061#76207#2" expanded="true" />
-            <element signature="e#76563#76729#1" expanded="true" />
-            <element signature="e#89855#90098#2" expanded="true" />
-            <element signature="e#91110#91359#2" expanded="true" />
-            <element signature="e#122815#123005#2" expanded="true" />
-            <element signature="e#123060#123250#2" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,10 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-          <folding>
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#div#2;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,12 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#!!top" />
-            <element signature="n#section#1;n#div#1;n#div#0;n#div#0;n#main#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,13 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="1114" column="20" selection-start-line="1114" selection-start-column="20" selection-end-line="1114" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -775,6 +748,13 @@
             <element signature="n#section#4;n#main#0;n#!!top" />
             <element signature="n#section#5;n#main#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="662" column="25" selection-start-line="662" selection-start-column="25" selection-end-line="662" selection-end-column="25" />
         </state>
       </provider>
     </entry>
