@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.slider_item').each(function(){
         var tag = $(this).find('.desc_overflow .desc');
         var tag_text = $(tag).text();
-        if (tag_text.length > 130) {
-            var truncated = tag_text.trim().substring(0, 130) + "…";
+        if (tag_text.length > 65) {
+            var truncated = tag_text.trim().substring(0, 65) + "…";
             $(tag).text(truncated);
         }
     });
