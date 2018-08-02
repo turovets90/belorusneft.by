@@ -18,14 +18,14 @@ $(document).ready(function(){
         }
     });
 
-    $('.type_news').each(function(){
+    /*$('.type_news').each(function(){
         var tag2 = $(this).find('.article_desc');
         var tag_text2 = $(tag2).text();
         if (tag_text2.length > 220) {
             var truncated2 = tag_text2.trim().substring(0, 220) + "…";
             $(tag2).text(truncated2);
         }
-    });
+    });*/
 
     $('.type_latest_news').each(function(){
         var tag3 = $(this).find('.item_desc');
