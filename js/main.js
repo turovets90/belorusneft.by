@@ -3,11 +3,58 @@ $(document).ready(function(){
     $('.slider_item').each(function(){
         var tag = $(this).find('.desc_overflow .desc');
         var tag_text = $(tag).text();
-        if (tag_text.length > 65) {
-            var truncated = tag_text.trim().substring(0, 65) + "…";
+        if (tag_text.length > 130) {
+            var truncated = tag_text.trim().substring(0, 130) + "…";
             $(tag).text(truncated);
         }
     });
+
+    $('.row_opinion .item').each(function(){
+        var tag1 = $(this).find('.desc');
+        var tag_text1 = $(tag1).text();
+        if (tag_text1.length > 65) {
+            var truncated1 = tag_text1.trim().substring(0, 65) + "…";
+            $(tag1).text(truncated1);
+        }
+    });
+
+    $('.type_news').each(function(){
+        var tag2 = $(this).find('.article_desc');
+        var tag_text2 = $(tag2).text();
+        if (tag_text2.length > 220) {
+            var truncated2 = tag_text2.trim().substring(0, 220) + "…";
+            $(tag2).text(truncated2);
+        }
+    });
+
+    $('.type_latest_news').each(function(){
+        var tag3 = $(this).find('.item_desc');
+        var tag_text3 = $(tag3).text();
+        if (tag_text3.length > 140) {
+            var truncated3 = tag_text3.trim().substring(0, 140) + "…";
+            $(tag3).text(truncated3);
+        }
+    });
+
+    $('.sidebar_news .type_news').each(function(){
+        var tag4 = $(this).find('.article_desc');
+        var tag_text4 = $(tag4).text();
+        if (tag_text4.length > 165) {
+            var truncated4 = tag_text4.trim().substring(0, 165) + "…";
+            $(tag4).text(truncated4);
+        }
+    });
+
+    $('.article_list_fullwidth_slider .type_news').each(function(){
+        var tag5 = $(this).find('.article_desc');
+        var tag_text5 = $(tag5).text();
+        if (tag_text5.length > 200) {
+            var truncated5 = tag_text5.trim().substring(0, 200) + "…";
+            $(tag5).text(truncated5);
+        }
+    });
+
+
 
     $('.mobile_btn').click(function () {
         $(this).toggleClass('active');
